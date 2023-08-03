@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Banking App</title>
+  <meta charset="UTF-8">
+  <!-- Add Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add custom CSS -->
+  <style>
+    body {
+      background-color: #f8f8f8;
+    }
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #337ab7;
+      padding: 15px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .btn-login {
+      width: 100%;
+    }
+    .register-link {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://www.pngplay.com/wp-content/uploads/6/Bank-Logo-Transparent-Background.png" alt="YourBank Logo">
+    </div>
+    <form action="login" method="post">
+      <div class="form-group">
+        <label for="email">Customer Id</label>
+        <input type="text" class="form-control" name="customer_id" placeholder="Customer Id">
+      </div>
+      <div class="form-group">
+        <label for="password">PIN</label>
+        <input type="password" class="form-control" name="pin" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-login">Login</button>
+      <div class="register-link">
+        <a href="register.html">Don't have an account? Register here.</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
